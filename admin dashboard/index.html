@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DashBoard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-top-left">
+                    <!-- <div class="search-bar"> -->
+                    <img src="images/magnify.svg" width=20px>
+                    <input type="text" id="search-fill" size=50>
+                    <!-- </div> -->
+                </div>
+
+                <div class="header-top-right">
+                    <div class="notification">
+                        <img src="images/bell-ring.svg" alt="notification-bell" width=20px>
+                    </div>
+                    <div class="logo">
+                        <img src="images/BaseZodd.png" alt="user-pic" width=30px;>
+                    </div>
+                    <div class="user-name">
+                        Karma Tobgay
+                    </div>
+                </div>
+
+                <div class="header-bottom-left">
+                    <div class="logo">
+                        <img src="images/BaseZodd.png" alt="user-pic" width=50px;>
+                    </div>
+                    <div class="header-nav-msg">
+                        <p>Hi there</p>
+                        <h4>Karma Tobgay (@tobgaykarma)</h4>
+                    </div>
+                </div>
+                <div class="header-bottom-right">
+                    <nav>
+                        <ul>
+                            <li><button onclick="openModal()">New</button></li>
+                            <li><button onclick="openModal()">Upload</button></li>
+                            <li><button onclick="handleShare()">Share</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="dashboard">
+                    <img src="images/view-dashboard-outline.svg" width=50px;>
+                    Dashboard
+                </div>
+                <div class="dashboard-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="/home"><img src="images/home-outline.svg" width="15px"> Home</a></li>
+                                <li><a href="/profile"><img src="images/card-account-details-outline.svg" width="15px"> Profile</a></li>
+                                <li><a href="/messages"><img src="images/message-outline.svg" width="15px"> Messages</a></li>
+                                <li><a href="/history"><img src="images/clock-time-three-outline.svg" width="15px"> History</a></li>
+                                <li><a href="/tasks"><img src="images/file-multiple.svg" width="15px"> Tasks</a></li>
+                                <li><a href="/communities"><img src="images/account-group-outline.svg" width="15px"> Communities</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li><a href="/settings"><img src="images/cog-outline.svg" width="15px"> Settings</a></li>
+                                <li><a href="/support"><img src="images/help-box-outline.svg" width="15px"> Support</a></li>
+                                <li><a href="/privacy"><img src="images/security.svg" width="15px"> Privacy</a></li>
+                            </ul>
+                         </nav>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h3>Your Projects</h3>
+                <div class="projects"></div>
+            </div>
+            
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="announcement-content">
+                    <div class="announcement-card">
+                        <h4>Site Maintenance</h4>
+                        <p>There is no site maintenance currently. If any site maintenance is there, information will be given here</p>
+                        
+                    </div>
+                    <div class="announcement-card">
+                        <h4>Community Share Day</h4>    
+                        <p>I don't know what this content is for. But I have to write something here in order fill in the empty space</p>
+                    </div>
+                    <div class="announcement-card">
+                        <h4>Updated Privacy Policy</h4>
+                        <p>This website reserves the right to update its privacy policy at any time. Users will be informed of such updates via email.</p>
+                    </div>
+                </div>
+
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trending-content">
+                        <div class="trending-card">
+                            <div class="img">
+                                <img src="images/guts.jpg" width=40px>
+                            </div>
+                            <div class="trending-content-body">
+                                <h5>@joe</h5>
+                                <p>Today is a great day!</p>
+                            </div>  
+                        </div>
+                        <div class="trending-card">
+                            <div class="img">
+                                <img src="images/griffith.jpg" width=40px>
+                            </div>
+                            <div class="trending-content-body">
+                                <h5>@dorji</h5>
+                                <p>New day, new adventures!</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script> 
+    </body>
+</html>
